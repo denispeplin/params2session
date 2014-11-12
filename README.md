@@ -1,5 +1,15 @@
 # Params2session
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'params2session'
+
+Then execute:
+
+    bundle
+
 ## Usage
 
 This gem can be used in two or more steps:
@@ -42,6 +52,6 @@ do_some_stuff if session_param == 'some'
 Params being saved in 'controller scope'. For example, in `UsersController`,
 calling `session_save(:mode)` will save `params[:mode]` to `session['clients.mode']`
 
-# License
+## License
 
 This project rocks and uses MIT-LICENSE.
