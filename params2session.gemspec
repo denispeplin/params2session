@@ -7,11 +7,12 @@ require "params2session/version"
 Gem::Specification.new do |s|
   s.name        = "params2session"
   s.version     = Params2session::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Params2session."
-  s.description = "TODO: Description of Params2session."
+  s.authors     = ["denispeplin"]
+  s.email       = ["denis.peplin@gmail.com"]
+  s.homepage    = "https://github.com/denispeplin/params2session"
+  s.summary     = "Save params to session"
+  s.description = "Save and manipulate saved params on per-controller basis"
+
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
