@@ -1,3 +1,5 @@
+[![Gem Version](https://fury-badge.herokuapp.com/rb/params2session.png)](http://badge.fury.io/rb/params2session)
+
 # Params2session
 
 ## Installation
