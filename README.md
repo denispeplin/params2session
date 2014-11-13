@@ -49,6 +49,9 @@ do_some_stuff if session_param == 'some'
 
 `session_param` helper also available in views.
 
+`session_equial?(param_name, value)` compares saved param with given value.
+Can be used to set state on buttons or button groups depending on saved param state.
+
 ## Internals
 
 Params being saved in 'controller scope'. For example, in `UsersController`,
