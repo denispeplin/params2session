@@ -19,7 +19,7 @@ module Params2session
     end
 
     def session_default(param_name, value)
-      update_session(param_name, value) unless session_param(param_name)
+      session_update(param_name, value) unless session_param(param_name)
     end
   end
 end
