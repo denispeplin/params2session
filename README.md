@@ -34,7 +34,7 @@ Or:
 ```ruby
 session_save :mode
 session_default 'all'
-do_some_stuff if session_param(:mode) == 'none'
+do_some_stuff if session_equal?(:mode, 'none')
 ```
 
 Or:
@@ -42,15 +42,16 @@ Or:
 ```ruby
 session_save :mode
 session_update(:mode, 'all') if session_param(':mode') == 'none'
-do_some_stuff if session_param == 'some'
+do_some_stuff if session_equal(:mode, 'some')
 ```
 
 ## View layer
 
-`session_param` helper also available in views.
+`session_param` and `session_equal?` helpers are also available in views.
 
-`session_equial?(param_name, value)` compares saved param with given value.
-Can be used to set state on buttons or button groups depending on saved param state.
+`session_equial?(param_name, value)` can be used in views to set class
+on buttons or button groups depending on saved param state, or to render
+different partial based on saved param.
 
 ## Internals
 
