@@ -33,7 +33,7 @@ Or:
 
 ```ruby
 session_save :mode
-session_default 'all'
+session_default :mode, 'all'
 do_some_stuff if session_equal?(:mode, 'none')
 ```
 
