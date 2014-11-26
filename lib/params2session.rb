@@ -27,4 +27,4 @@ end
 ActionController::Base.send(:include, Params2session::CommonHelpers)
 ActionController::Base.send(:include, Params2session::Controller)
 ActionView::Base.send(:include, Params2session::CommonHelpers)
-ActionView::Helpers(:include, Params2session::CommonHelpers) if Rails::VERSION::MAJOR > 3
+ActionView::Helpers.send(:include, Params2session::CommonHelpers) if Rails::VERSION::MAJOR > 3
