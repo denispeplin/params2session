@@ -2,6 +2,12 @@
 
 # Params2session
 
+## Why
+
+* To simplify common patterns, related to saving session variables.
+* To store variables in "per-controller scope". For example, in `UsersController`,
+calling `session_save(:mode)` will save `params[:mode]` to `session['users.mode']`
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -52,11 +58,6 @@ do_some_stuff if session_equal(:mode, 'some')
 `session_equial?(param_name, value)` can be used in views to set class
 on buttons or button groups depending on saved param state, or to render
 different partial based on saved param.
-
-## Internals
-
-Params being saved in 'controller scope'. For example, in `UsersController`,
-calling `session_save(:mode)` will save `params[:mode]` to `session['clients.mode']`
 
 ## License
 
